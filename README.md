@@ -490,12 +490,15 @@ docker ps | grep cql-proxy
 ```
 ![watsonx-all-containers](./assets/screenshots/watsonx-all-containers.png)
 
+-- Install cqlsh
+```
+pip install cqlsh
+```
 
 -- Verify if you are able to access AstraDB successfully
 ```
 -- Install cqlsh
 pip install cqlsh
-
 cqlsh <host-IP> 9042
 ```
 
