@@ -468,6 +468,8 @@ If the cql-proxy successfully starts, you'll see output like:
 ```
 ![CQLproxy Running](./assets/screenshots/cqlproxy-running.png)
 
+
+Do the next steps by sshing into the machine in a new terminal.
 #### 5.3 Get VM IP Address
 
 ```
@@ -491,6 +493,9 @@ docker ps | grep cql-proxy
 
 -- Verify if you are able to access AstraDB successfully
 ```
+-- Install cqlsh
+pip install cqlsh
+
 cqlsh <host-IP> 9042
 ```
 
