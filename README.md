@@ -185,7 +185,7 @@ In this workshop, we will only use the Iceberg catalog and the Presto UI.
 
 #### 2.1 Access Watsonx UI and create Iceberg Schema
 
-1. Login into the Watsonx UI at the published endpoint.
+Login into the Watsonx UI at the published endpoint.
   
     🔐  Username: ibmlhadmin
 
@@ -193,11 +193,12 @@ In this workshop, we will only use the Iceberg catalog and the Presto UI.
 
     ![watsonx.data UI Login](./assets/screenshots/wxd_login.png)
 
-2. Go to Data Manager and Create Schema named **customers_schema** in the **iceberg_data** catalog.
+Go to Data Manager and Create Schema named **customers_schema** in the **iceberg_data** catalog.
 
 #### 2.2 Create Iceberg Tables (Historical Data)
 
-Go to **Query Manager** and Create Iceberg tables as follows:
+1. Go to Data Manager and Create Schema named **customers_schema** in the **iceberg_data** catalog. Or create schema using SQL command.
+2. Go to **Query Manager** and Create Iceberg tables as follows:
 
 
 customers_details : contains customer details like name, email, city, country, signup date, and customer tier.
