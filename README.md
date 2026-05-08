@@ -671,10 +671,10 @@ SELECT
     COUNT(DISTINCT s.customer_id) AS currently_active,
     SUM(s.items_in_cart) AS total_items_in_carts,
     COUNT(DISTINCT CASE WHEN t.status = 'Pending' THEN t.transaction_id END) AS pending_transactions
-FROM customers_schema.customers_details c
+FROM iceberg_data.customers_schema.customers_details c
 LEFT JOIN (
     SELECT customer_id, SUM(amount) AS lifetime_value
-    FROM customers_schema.customers_orders
+    FROM iceberg_data.customers_schema.customers_orders
     GROUP BY customer_id
 ) order_summary ON c.customer_id = order_summary.customer_id
 LEFT JOIN astradb_catalog.customers.customer_sessions s 
